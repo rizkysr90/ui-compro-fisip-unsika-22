@@ -1,0 +1,11 @@
+{
+  "name": "compro-fisip-unsika-2022",
+  "version": "1.0.0",
+  "description": "company profile fisip unsika 2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BEM FISIP UNSIKA",
+  "license": "ISC"
+}
