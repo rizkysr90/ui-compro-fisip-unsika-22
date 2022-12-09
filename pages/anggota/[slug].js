@@ -6,9 +6,11 @@ import Link from 'next/link';
 
 export default function Home({divisions}) {
     const data = divisions?.attributes;
+    console.log(data);
     const members = data.members?.data;
     const prokers = data.prokers?.data;
-    console.log(data);
+    console.log('Ini',members);
+    // console.log(data);
     let ketuaBidang = {}, anggota = [];
     if (members) {
         members.forEach(element => {
@@ -34,10 +36,10 @@ export default function Home({divisions}) {
               <p className='py-6 text-neutral font-para text-center text-sm lg:text-base max-w-2xl'>{data?.tupoksi}</p>
               <div className="flex lg:flex-row flex-col w-full lg:px-10 flex-wrap justify-center">
                   {
-                     <div className="lg:mb-0 mb-8 basis-1/5 my-8 flex flex-col items-center">
+                     <div className="lg:mb-0 mb-8 basis-1/5 my-4 flex flex-col items-center">
                       <div className="avatar">
                         <div className="w-48 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                          <img src={ketuaBidang.profile_image.data ? ketuaBidang.profile_image.data.attributes.url : 'https://ik.imagekit.io/rizkysr90/dumivWPg_400x400_t3hcuRr6I.jpg'} />
+                          <img src={ketuaBidang.profile_image?.data ? ketuaBidang.profile_image?.data?.attributes?.url : 'https://ik.imagekit.io/rizkysr90/dumivWPg_400x400_t3hcuRr6I.jpg'} />
                         </div>
                       </div>
                       <p className="card-title font-para text-base text-secondary mt-2 lg:text-lg text-center inline">{ketuaBidang.name}</p>
@@ -53,7 +55,7 @@ export default function Home({divisions}) {
                             <div className="lg:mb-0 mb-8 basis-1/5 my-4 flex flex-col items-center" key={idx}>
                               <div className="avatar">
                                 <div className="w-48 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                  <img src={data.profile_image.data ? data.profile_image.data.attributes.url : 'https://ik.imagekit.io/rizkysr90/dumivWPg_400x400_t3hcuRr6I.jpg'} />
+                                  <img src={data.profile_image?.data ? data.profile_image?.data?.attributes?.url : 'https://ik.imagekit.io/rizkysr90/dumivWPg_400x400_t3hcuRr6I.jpg'} />
                                 </div>
                               </div>
                               <p className="card-title font-para text-base text-secondary mt-2 lg:text-lg text-center inline">{data.name}</p>

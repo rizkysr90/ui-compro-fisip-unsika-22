@@ -121,7 +121,7 @@ export async function getServerSideProps() {
     return {
         props : {
             adkesma : adkesmaData?.data ? adkesmaData.data : null,
-            paginationData : adkesmaData?.meta.pagination ? adkesmaData?.meta.pagination : null
+            paginationData : adkesmaData?.meta.pagination ? adkesmaData?.meta?.pagination : null
         }
     }
 }

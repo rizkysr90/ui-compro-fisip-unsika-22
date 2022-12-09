@@ -46,10 +46,10 @@ export default function Home({divisions,prokers,metaProker,adkesma,berita}) {
             <Hero/>
             <div className='flex flex-col items-center lg:mt-0 py-10 px-5 bg-base-300'>
               <div className=''>
-                <div id="profile" className='text-primary text-3xl md:text-6xl font-heading leading-tight'>PROFILE</div>
+                <div id="profile" className='text-primary text-3xl md:text-6xl font-heading leading-tight normal-case'>Profile</div>
               </div>
               <p className='py-6 text-neutral font-para text-center max-w-2xl text-white'>Badan Eksekutif Mahasiswa Fakultas Ilmu Sosial dan Ilmu Politik Universitas Singaperbangsa Karawang
-                  merupakan organisasi mahasiswa tingkat fakultas yang mempunyai 5 Bidang dan 10 Departemen.</p>
+                  merupakan organisasi mahasiswa tingkat fakultas yang terdiri dari Badan Pengurus Harian, 5 Bidang serta 10 Departemen.</p>
               <div className="flex lg:flex-row flex-col w-full lg:px-20 flex-wrap">
                   {
                     divisions ? 
@@ -78,7 +78,7 @@ export default function Home({divisions,prokers,metaProker,adkesma,berita}) {
             </div>
             <div className='flex flex-col items-center lg:mt-0  py-10 px-5  bg-primary'>
               <div className=''>
-                <div id="program-kerja" className='text-secondary text-3xl md:text-6xl font-heading text-center leading-tight'>PROGRAM KERJA</div>
+                <div id="program-kerja" className='text-secondary text-3xl md:text-6xl font-heading text-center leading-tight normal-case'>Program Kerja</div>
                 <p className='py-6 w-full text-neutral text-center font-para text-center  text-white'> Program kerja Badan Eksekutif Mahasiswa 
                 Fakultas Ilmu Sosial Politik Universitas Singaperbangsa Karawang
                </p>
@@ -88,7 +88,7 @@ export default function Home({divisions,prokers,metaProker,adkesma,berita}) {
                         const data = elm.attributes;
                         return (
                           <Link href = {`/proker/${data.slug}`}>
-                            <a className="card basis-2/6 lg:basis-1/5 shadow-xl mx-2 my-2 flex-grow lg:mx-4 lg:my-4" key={idx}>
+                            <a className="card basis-2/6 lg:basis-1/5 grow lg:grow-0 shadow-xl mx-2 my-2  lg:mx-4 lg:my-4" key={idx}>
                               <figure className="h-28"><img  src={data.cover_image?.data ? data.cover_image.data.attributes.url : 'https://ik.imagekit.io/rizkysr90/dumivWPg_400x400_t3hcuRr6I.jpg'} alt="Shoes" /></figure>
                               <div className="card-body p-3 bg-secondary">
                                 <h2 className="card-title text-sm text-base-300 font-bold">
@@ -120,7 +120,7 @@ export default function Home({divisions,prokers,metaProker,adkesma,berita}) {
             <div className='flex flex-col items-center py-10 px-5 lg:mt-0 bg-base-300 border-b border-primary'>
             <div id="adkesma"className='text-secondary text-3xl md:text-6xl font-heading text-center leading-tight'>Adkesma Update</div>
             <p className='py-6 w-full text-neutra text-center font-para text-center  text-white'>
-            Informasi advokasi mengenai fasilitas, akademis, dan finansial untuk memenuhi kesejahteraan mahasiswa
+            Informasi advokasi mengenai fasilitas, akademis, dan finansial untuk mewujudkan kesejahteraan mahasiswa
             </p>
                 <div className='flex flex-row flex-wrap justify-center lg:mx-32'>
                     {
@@ -181,8 +181,8 @@ export default function Home({divisions,prokers,metaProker,adkesma,berita}) {
             </div>
             </div>
             <div className='flex flex-col items-center py-10 px-5 lg:mt-0 bg-base-300'>
-              <div id="berita-fisip" className='text-secondary text-3xl md:text-6xl font-heading text-center leading-tight'>Berita FISIP</div>
-              <p className='py-6 w-full text-neutra text-center font-para text-center  text-white'>Semua Informasi Tentang Badan Eksekutif Mahasiswa Fakultas Ilmu Sosial Politik Universitas Singaperbangsa Karawang</p>
+              <div id="berita-fisip" className='text-secondary text-3xl md:text-6xl font-heading text-center leading-tight'>Berita Fisip</div>
+              <p className='py-6 w-full text-neutra text-center font-para text-center  text-white'>Rangkuman informasi seputar fakultas ilmu sosial dan ilmu politik Universitas Singaperbangsa Karawang</p>
               <div className='flex flex-row flex-wrap justify-center lg:mx-10'>
                       {
                         berita.map((elm,idx) => {

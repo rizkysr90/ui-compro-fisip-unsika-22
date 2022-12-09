@@ -50,7 +50,7 @@ export default function Layout({children}) {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/contact'>
+                                    <Link href='/#footer'>
                                         <a className="btn rounded-md btn-primary text-white ml-4 normal-case">Contact Us</a>
                                     </Link>
                                 </li>
@@ -74,27 +74,27 @@ export default function Layout({children}) {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/'>
+                                    <Link href='/#profile'>
                                         <a>Profile</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/program-kerja'>
+                                    <Link href='/#program-kerja'>
                                         <a>Program Kerja</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/adkesma'>
+                                    <Link href='/#adkesma'>
                                         <a>Adkesma Update</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/berita-fisip'>
+                                    <Link href='/#berita-fisip'>
                                         <a>Berita Fisip</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/contact'>
+                                    <Link href='/#footer'>
                                         <a>Contact Us</a>
                                     </Link>
                                 </li>

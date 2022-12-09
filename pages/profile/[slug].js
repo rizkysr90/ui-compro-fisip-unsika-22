@@ -37,8 +37,8 @@ export default function Home({divisions}) {
                                   </figure>
                                   <div className="card-body text-white px-3 py-5 lg:px-auto lg:py-auto " >
                                       <p className="card-title text-base lg:text-lg text-center inline">{name}</p>
-                                      <a className='btn btn-secondary w-full normal-case'>Lihat</a>
                                   </div>
+                                     
                               </div>
                             </a>
                           </Link>

@@ -15,7 +15,7 @@ export default function ProdukUnitUsaha({proker}) {
     return (
         <Layout>
             <div className="min-h-screen bg-base-100">
-                <div className="hero h-96 relative" style={{backgroundImage: `url(${data.cover_image.data.attributes.url})`}}>
+                <div className="hero h-96 relative" style={{backgroundImage: `url(${data.cover_image?.data?.attributes?.url})`}}>
                     <div className="absolute w-full h-96 bg-cover" style={{backgroundImage: 'linear-gradient(180deg, rgba(143,36,146,0.7) 0%, rgba(0,0,0,0.8939775739397321) 100%)'}}/>
                     <div className="hero-content text-center absolute -mt-10 text-base-100">
                         <div className="lg:w-3/4 w-full">
@@ -25,7 +25,7 @@ export default function ProdukUnitUsaha({proker}) {
                     </div>
                 </div>
                 <div className="min-h-screen relative text-neutral z-10 flex flex-col items-center bg-white shadow-lg lg:mx-5 lg:px-20 lg:py-10 lg:mx-20 p-4 -mt-28 lg:-mt-24 rounded-lg">
-                    <img src={data.cover_image.data.attributes.url} className="max-h-96 max-w-full lg:rounded-none rounded-t-lg"></img>
+                    <img src={data.cover_image?.data?.attributes?.url} className="max-h-96 max-w-full lg:rounded-none rounded-t-lg"></img>
                     <article
                         className='prose-sm lg:prose-base max-w-full text-left lg:mx-5 lg:mx-24 overflow-hidden my-5 lg:my-10'
                         dangerouslySetInnerHTML={{__html: data.artikel}}>
