@@ -74,8 +74,8 @@ export default function Artikel({adkesma,paginationData}) {
                                             //         </div>
                                             //     </a>
                                             // </Link>
-                                            <Link href = {`/adkesma/${data.slug}`}>
-                                                <a className="card card-side lg:basis-5/12 bg-accent w-full shadow-xl mx-2 flex-grow lg:mx-4 my-2" key={idx}>
+                                            <Link href = {`/adkesma/${data.slug}`} key={idx}>
+                                                <a className="card card-side lg:basis-5/12 bg-accent w-full shadow-xl mx-2 flex-grow lg:mx-4 my-2" >
                                                     <div className="card-body px-4 py-4">
                                                     <h2 className="card-title text-sm font-bold text-secondary">{data.name}</h2>
                                                     <p className='text-xs text-ellipsis overflow-hidden h-12'>{convert(data.artikel, {wordwrap: 130, limits : {maxInputLength:500, ellipsis: '...'}})}</p>

@@ -87,8 +87,8 @@ export default function Home({divisions,prokers,metaProker,adkesma,berita}) {
                       dataProker.map((elm,idx) => {
                         const data = elm.attributes;
                         return (
-                          <Link href = {`/proker/${data.slug}`}>
-                            <a className="card basis-2/6 lg:basis-1/5 grow lg:grow-0 shadow-xl mx-2 my-2  lg:mx-4 lg:my-4" key={idx}>
+                          <Link href = {`/proker/${data.slug}`} key={idx}>
+                            <a className="card basis-2/6 lg:basis-1/5 grow lg:grow-0 shadow-xl mx-2 my-2  lg:mx-4 lg:my-4" >
                               <figure className="h-28"><img  src={data.cover_image?.data ? data.cover_image.data.attributes.url : 'https://ik.imagekit.io/rizkysr90/dumivWPg_400x400_t3hcuRr6I.jpg'} alt="Shoes" /></figure>
                               <div className="card-body p-3 bg-secondary">
                                 <h2 className="card-title text-sm text-base-300 font-bold">
@@ -127,8 +127,8 @@ export default function Home({divisions,prokers,metaProker,adkesma,berita}) {
                       adkesma?.map((elm,idx) => {
                         const data = elm.attributes;
                         return (
-                          <Link href = {`/adkesma/${data.slug}`}>
-                            <a className="card card-side lg:basis-5/12 bg-accent w-full shadow-xl mx-2 flex-grow lg:mx-4 my-2" key={idx}>
+                          <Link href = {`/adkesma/${data.slug}`} key={idx}>
+                            <a className="card card-side lg:basis-5/12 bg-accent w-full shadow-xl mx-2 flex-grow lg:mx-4 my-2" >
                                 <div className="card-body px-4 py-4">
                                   <h2 className="card-title text-sm font-bold text-secondary">{data.name}</h2>
                                   <p className='text-xs text-ellipsis overflow-hidden h-12'>{convert(data.artikel, {wordwrap: 130, limits : {maxInputLength:500, ellipsis: '...'}})}</p>
@@ -188,8 +188,8 @@ export default function Home({divisions,prokers,metaProker,adkesma,berita}) {
                         berita.map((elm,idx) => {
                           const data = elm.attributes;
                           return (
-                            <Link href = {`/berita/${data.slug}`}>
-                              <a className="card w-full rounded-md lg:basis-1/4 shadow-xl mx-2 grow lg:grow-0 lg:mx-4 my-2" key={idx}>
+                            <Link href = {`/berita/${data.slug}`} key={idx}>
+                              <a className="card w-full rounded-md lg:basis-1/4 shadow-xl mx-2 grow lg:grow-0 lg:mx-4 my-2" >
                                 <figure className=""><img  className = "h-48 w-full" src={data.cover_image?.data ? data.cover_image.data.attributes.url : 'https://ik.imagekit.io/rizkysr90/dumivWPg_400x400_t3hcuRr6I.jpg'} alt="Gambar cover" /></figure>
                                 <div className="card-body p-3 bg-accent">
                                   <h2 className="card-title text-sm lg:text-base  font-bold">

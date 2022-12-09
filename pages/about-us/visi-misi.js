@@ -34,7 +34,7 @@ export default function Artikel({misi,visi}) {
                                 misi?.map((elm,idx) => {
                                     elm = elm.attributes;
                                     return (
-                                        <div className="w-full bg-accent m-2 p-4 flex-grow rounded-md lg:basis-1/5">
+                                        <div className="w-full bg-accent m-2 p-4 flex-grow rounded-md lg:basis-1/5" key={idx}>
                                             <p className="text-left">{`${idx+1}. ${elm.konten}`}</p>
                                         </div>
                                     )

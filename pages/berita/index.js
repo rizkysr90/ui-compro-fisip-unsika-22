@@ -58,8 +58,8 @@ export default function Artikel({berita,paginationData}) {
                                     dataArtikel.map((elm,idx) => {
                                         const data = elm.attributes
                                         return (
-                                            <Link href = {`/berita/${data.slug}`}>
-                                                <a className="card w-full rounded-md lg:basis-1/4 shadow-xl mx-2 grow lg:grow-0 lg:mx-4 my-2" key={idx}>
+                                            <Link href = {`/berita/${data.slug}`} key={idx}>
+                                                <a className="card w-full rounded-md lg:basis-1/4 shadow-xl mx-2 grow lg:grow-0 lg:mx-4 my-2" >
                                                 <figure className=""><img  className = "h-48 w-full" src={data.cover_image?.data ? data.cover_image.data.attributes.url : 'https://ik.imagekit.io/rizkysr90/dumivWPg_400x400_t3hcuRr6I.jpg'} alt="Gambar cover" /></figure>
                                                 <div className="card-body p-3 bg-accent">
                                                     <h2 className="card-title text-sm lg:text-base  font-bold">
