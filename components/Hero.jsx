@@ -6,10 +6,8 @@ export default function Hero() {
                 <div className=" flex flex-col items-center md:mt-0">
                     <img src="/assets/logo_kabinet.png" className="h-60"></img>
                     <div className="relative h-auto w-full ">
-                        <div className="text-primary text-4xl md:text-7xl font-heading leading-tight absolute top-0 left-5 md:top-0 md:left-0">
-                            WELCOME TO SI-FISIP
-                        </div>
-                        <div className="text-secondary text-4xl md:text-7xl font-heading leading-tight">
+                        
+                        <div className="text-primary text-4xl md:text-7xl font-heading leading-tight">
                             WELCOME TO SI-FISIP
                         </div>
                     </div>
