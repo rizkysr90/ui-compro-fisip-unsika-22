@@ -80,7 +80,7 @@ export default function Home({divisions,prokers,metaProker,adkesma,berita}) {
               <div className=''>
                 <div id="program-kerja" className='text-secondary text-3xl md:text-6xl font-heading text-center leading-tight normal-case'>Program Kerja</div>
                 <p className='py-6 w-full text-neutral text-center font-para text-center  text-white'> Program kerja Badan Eksekutif Mahasiswa 
-                Fakultas Ilmu Sosial Politik Universitas Singaperbangsa Karawang
+                Fakultas Ilmu Sosial dan Ilmu Politik Universitas Singaperbangsa Karawang
                </p>
                 <div className='flex flex-row flex-wrap justify-center mt-2 lg:mx-12'>
                     {
@@ -181,7 +181,7 @@ export default function Home({divisions,prokers,metaProker,adkesma,berita}) {
             </div>
             </div>
             <div className='flex flex-col items-center py-10 px-5 lg:mt-0 bg-base-300'>
-              <div id="berita-fisip" className='text-secondary text-3xl md:text-6xl font-heading text-center leading-tight'>Berita Fisip</div>
+              <div id="berita-fisip" className='text-secondary text-3xl md:text-6xl font-heading text-center leading-tight'>Berita FISIP</div>
               <p className='py-6 w-full text-neutra text-center font-para text-center  text-white'>Rangkuman informasi seputar fakultas ilmu sosial dan ilmu politik Universitas Singaperbangsa Karawang</p>
               <div className='flex flex-row flex-wrap justify-center lg:mx-10'>
                       {
